@@ -77,9 +77,6 @@ $btn: '.btn';
     }
 }
 
-
-
-
 .ui{
     &__button{
         &--small{}
@@ -119,3 +116,8 @@ $btn: '.btn';
         }
     }
 }
+
+
+
+
+@import 'ui-checkbox';

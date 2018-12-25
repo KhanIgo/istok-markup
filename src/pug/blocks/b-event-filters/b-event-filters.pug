@@ -1,0 +1,45 @@
++b.b-event-filters
+    +e.container.container
+        +e.drops
+            +b.input-item--city-filter
+                +e.label
+                    p Город
+                +e.data
+                    +b.ui-dropdown
+                        +e({tag:'SELECT'}).select
+                            option Город
+                            option Хабаровск
+                            option Владивосток
+                            option Благовещенск
+                            option Урюпинск
+                            option Бобруйск
+            +b.input-item--title-filter
+                +e.label
+                    p Название тренинга
+                +e.data
+                    +b.ui-dropdown
+                        +e({tag:'SELECT'}).select
+                            option Инструменты фасилитации для руководителей
+                            option Какой-то тренинг 1
+                            option Какой-то тренинг 2
+                            option Какой-то тренинг 3
+                            option Какой-то тренинг 4
+                        
+        +e.checks
+            +b.LABEL.ui-checkbox
+                +e(type="checkbox").INPUT.input--blue
+                +e.SPAN.input-span--blue
+                +e.SPAN.label--blue Для руководителей
+            +b.LABEL.ui-checkbox
+                +e(type="checkbox").INPUT.input--orange
+                +e.SPAN.input-span--orange
+                +e.SPAN.label--orange Для HR и бизнес-тренеров
+            +b.LABEL.ui-checkbox
+                +e(type="checkbox").INPUT.input--green
+                +e.SPAN.input-span--green
+                +e.SPAN.label--green Для коучей 
+            +b.LABEL.ui-checkbox
+                +e(type="checkbox").INPUT.input--purple
+                +e.SPAN.input-span--purple
+                +e.SPAN.label--purple Для всех
+            

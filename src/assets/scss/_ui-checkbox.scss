@@ -1,0 +1,73 @@
+.ui-checkbox{
+    position: relative;
+    &__input{
+        width: 16px;
+        height: 16px;
+        opacity: 0;
+        position: relative;
+        z-index: 2;
+        display: inline-block;
+        &+span{
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            z-index: 1;
+            left: 0;
+            top: 0;
+        }
+        &:checked{
+            &+.ui-checkbox__input-span--blue{
+                background: url('../img/ui-checkbox-blue.svg') no-repeat;
+                background-position: center;
+            }
+            &+.ui-checkbox__input-span--orange{
+                background: url('../img/ui-checkbox-orange.svg') no-repeat;
+                background-position: center;
+            }
+            &+.ui-checkbox__input-span--green{
+                background: url('../img/ui-checkbox-green.svg') no-repeat;
+                background-position: center;
+            }
+            &+.ui-checkbox__input-span--purple{
+                background: url('../img/ui-checkbox-purple.svg') no-repeat;
+                background-position: center;
+            }
+            
+        }
+    }
+    &__input--blue{}
+    &__input-span{
+    }
+    &__input-span--blue{
+        border: solid 2px $color-blue;
+    }
+    &__input-span--orange{
+        border: solid 2px $color-orange;
+    }
+    &__input-span--green{
+        border: solid 2px $color-green;
+    }
+    &__input-span--purple{
+        border: solid 2px $color-purple;
+    }
+    
+    &__label{
+        margin-left: 15px;
+    }
+    &__label--blue{
+        color: $color-blue;
+    }
+    &__label--orange{
+        color: $color-orange;
+    }
+    &__label--green{
+        color: $color-green;
+    }
+    &__label--purple{
+        color: $color-purple;
+    }
+    
+    
+    
+}
