@@ -1,0 +1,29 @@
+$c_selector: '.c-single-event-leading';
+$assets_path: '../../assets/img/';
+
+#{$c_selector}{
+    &--row{}
+    &__container{
+        max-width: 972px;
+        padding-top: 100px;
+    }
+    &__title{
+        text-align: center;
+        //font-size: 1.75em;
+    }
+    &__leaders{
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        align-items: stretch;
+        width: 100%;
+        margin-top: 55px;
+        .event-leader{
+            &:nth-child(2n){
+                margin-left: -1px;
+            }
+        }
+    }
+}

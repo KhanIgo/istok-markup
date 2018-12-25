@@ -1,0 +1,55 @@
+$c_selector: '.c-single-event-res';
+$assets_path: '../../assets/img';
+
+#{$c_selector}{
+    &--row{}
+    &__container{
+        text-align: center;
+        padding-top: 110px;
+        padding-bottom: 50px;
+        
+    }
+    &__title{}
+    &__checks{
+        list-style: none;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        margin: 0 auto;
+        max-width: 700px;
+        margin-top: 45px;
+    }
+}
+
+.single-event-result{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-basis: 50%;
+    position: relative;
+    padding: 0 30px;
+    text-align: left;
+    width: 100%;
+    max-width: 350px;
+    margin: 16px 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+    &:before{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: url("#{$assets_path}/result-check.svg") no-repeat;
+        background-size: contain;
+    }
+}

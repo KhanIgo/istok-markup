@@ -1,0 +1,62 @@
+.ui-accordeon-item{
+    margin-bottom: 10px;
+    width: 100%;
+    
+    &__header{
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: #F6F6F6;
+        border-left: solid 5px $color-green;
+        padding: 20px 35px;
+        
+        &-text{
+            flex-grow: 1;
+        }
+        &-date{
+            color: $color-grey;
+        }
+        &-title{
+            color: $color-grey-dark;
+            font-weight: 500;
+            font-size: 1.3em;
+            margin-top: 5px;
+        }
+        &-action{
+            flex-shrink: 0;
+            flex-grow: 0;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            align-items: flex-end;
+            
+        }
+    }
+    &__extend{
+        position: relative;
+        display: inline-block;
+        padding-right: 15px;
+        &:after{
+            content: '';
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 6px;
+            width: 10px;
+            height: 6px;
+            background: url("#{$assets_path}/accordeon-extend-arrow.png") no-repeat;
+            background-position: top left;
+        }
+    }
+    &__body{
+        display: none;
+        
+        &-inner{}
+    }
+}

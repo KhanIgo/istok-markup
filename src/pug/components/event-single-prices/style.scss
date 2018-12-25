@@ -1,0 +1,33 @@
+$c_selector: '.c-event-price';
+#{$c_selector}{
+    &--row{
+        padding-top: 120px;
+    }
+    &__container{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    &__title{
+        text-align: center;
+    }
+    &__desc{
+        text-align: center;
+        margin-top: 25px;
+    }
+    &__price-items{
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 60px;
+    }
+    &__sub-desc{
+        text-align: center;
+        margin-top: 60px;
+    }
+}
+
+

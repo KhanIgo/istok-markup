@@ -1,0 +1,38 @@
++b.c-single-event-contact--row.row
+    +e.container.container  
+        +e.contact-data
+            +b.c-single-event-contact-item--date
+                +e.label
+                    p Дата
+                +e.data
+                    p 16 ноября
+            
+            +b.c-single-event-contact-item--city
+                +e.label
+                    p Город
+                +e.data
+                    +b.ui-dropdown
+                        +e({tag:'SELECT'}).select
+                            option Город
+                            option Хабаровск
+                            option Владивосток
+                            option Благовещенск
+                            option Урюпинск
+                            option Бобруйск
+                    
+            +b.c-single-event-contact-item--address
+                +e.label
+                    p Адрес
+                +e.data
+                    p ул. Фрунзе, 22,  офис 401
+            
+            +b.c-single-event-contact-item--connection
+                +e.label
+                    p Контакты
+                +e.data
+                    p 
+                        a(href="#") 8 (4212) 24-31-13 #[br] #[a(href="#") info@tc-i.ru]
+        +e.contact-map
+            img(src="/images/map.jpg")
+            
+        

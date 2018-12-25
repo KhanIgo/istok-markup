@@ -1,0 +1,38 @@
+$b_selector: '.event-leader';
+#{$b_selector}{
+    width: 100%;
+    max-width: 485px;
+    border: solid 1px $color-green;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    
+    &__photo{
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        overflow: hidden;
+        flex-shrink: 0;
+        flex-grow: 0;
+    }
+    
+    &__info{
+        flex-grow: 1;
+        margin-left: 30px;
+    }
+    &__name{
+        font-size: 1.15em;
+        margin-top: 5px;
+    }
+    &__desc{
+        color: $color-grey-3;
+        font-size: 0.87em;
+        margin-top: 15px;
+    }
+}

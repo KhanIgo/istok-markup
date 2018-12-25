@@ -1,0 +1,32 @@
+doctype html
+html(lang='RU-ru')
+    head
+        meta(charset='UTF-8')
+        title Мероприятие
+        link(rel='stylesheet', href='assets/libs/hamburger/hamburgers.css')
+        link(rel='stylesheet', href='assets/fonts/Circe/font.css')
+        link(rel='stylesheet', href='assets/css/style.css')
+    body
+        include parts/_mixins.pug
+        include parts/_header.pug
+        
+        main
+            include components/event-single-top/index.pug
+            include components/event-single-contact/index.pug
+            include components/event-single-text/index.pug
+            include components/event-single-leading/index.pug
+            include components/event-single-for/index.pug
+            include components/event-single-result/index.pug
+            include components/event-single-program/index.pug
+            include components/event-single-cert/index.pug
+            include components/event-single-prices/index.pug
+            include components/event-single-feedbacks/index.pug
+  
+        include parts/_footer.pug
+        
+        script(src='assets/libs/jquery/jquery-3.2.1.min.js')
+        script(src='assets/libs/mobile-detect/mobile-detect.min.js')
+        script(src='assets/js/responsive.js')
+        script(src='assets/js/main.js')
+        script.
+            jQuery(function($) {});

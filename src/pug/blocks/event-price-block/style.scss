@@ -1,0 +1,44 @@
+$block_selector: '.event-price';
+#{$block_selector}{
+    width: 300px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    padding: 45px 40px;
+    
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15);
+    flex-shrink: 0;
+    
+    &__name{
+        font-size: 1.42em;
+        font-weight: 800;
+    }
+    &__desc{
+        margin-top: 15px;
+        color: $color-grey-6;
+        ul{
+            color: $color-grey-dark;
+            margin-top: 25px;
+        }
+        li{
+            margin-bottom: 5px;
+        }
+    }
+    &__limiter{
+        height: 6px;
+        border: none;
+        background: $color-green;
+        margin-top: 31px;
+    }
+    &__price-label{
+        color: $color-grey;
+        margin-top: 25px;
+    }
+    &__price-value{
+        font-size: 2em;
+        font-weight: 800;
+    }
+}

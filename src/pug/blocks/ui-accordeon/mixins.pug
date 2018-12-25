@@ -1,0 +1,15 @@
+mixin accordeon_item(name, text)
+    +b.ui-accordeon-item
+        +e.header
+            +e.header-text
+                +e.header-date
+                    p 16-18 ноября
+                +e.header-title 
+                    p!= name
+            +e.header-action
+                +e.A.extend.c-inherit.tdn(href="#") Развернуть
+            
+        +e.body
+            +e.body-inner
+                != text
+                

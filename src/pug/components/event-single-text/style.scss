@@ -1,0 +1,28 @@
+$c_selector: '.c-single-event-text';
+$assets_path: '../../assets/img/';
+
+#{$c_selector}{
+    &--row{
+        padding-top: 100px;
+    }
+    &__container{
+        max-width: 970px;
+        padding-left: 100px;
+    }
+    &__title{
+        h3{
+            font-size: 1.75em;
+        }
+    }
+    &__cnt{
+        padding-left: 70px;
+        padding-top: 55px;
+        font-size: 0.87em;
+        p{
+            margin-bottom: 1.5em;
+            line-height: 1.4em;
+        }
+    }
+    &__{}
+    &__{}
+}

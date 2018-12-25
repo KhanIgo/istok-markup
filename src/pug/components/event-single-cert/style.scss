@@ -1,0 +1,27 @@
+$c_selector: ".c-single-event-cert";
+#{$c_selector}{
+    &--row{
+        padding-top: 60px;
+    }
+    &__container{
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        align-items: stretch;
+        background-color: $color-grey-4;
+        padding: 60px 110px;
+    }
+    &__img-cnt{}
+    &__desc{
+        margin-left: 70px;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}

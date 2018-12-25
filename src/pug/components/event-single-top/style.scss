@@ -1,0 +1,37 @@
+$se_top_sel: '.c-single-event-top';
+
+#{$se_top_sel}{
+    &--row{
+        background: url('#{$assets_path}single-event-top-bg.jpg');
+        color: white;
+    }
+    &__container{
+        text-align: center;
+        padding-top: 130px;
+        padding-bottom: 250px;
+    }
+    &__title{
+        font-size: 1.75em;
+        h1{
+            font-size: 1em;
+        }
+    }
+    &__desc{
+        font-size: 0.9em;
+        margin-top: 1em;
+    }
+    &__btn-wrpr{
+        margin-top: 35px;
+    }
+    &__btn{
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+    
+    
+    //&__{}
+    
+    
+    
+    
+}

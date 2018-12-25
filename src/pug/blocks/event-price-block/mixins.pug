@@ -1,0 +1,12 @@
+mixin event_price(name, desc, price)
+    +b.event-price
+        +e.name
+            p= name
+        +e.desc
+            != desc
+        +e.HR.limiter
+        +e.price-label
+            p Стоимость
+        +e.price-value
+            p= price 
+                span.rouble
