@@ -12,6 +12,7 @@
 @import 'footer';
 @import 'page';
 @import 'elements';
+@import 'p-event-list';
 @import '../../pug/blocks/ui-accordeon/style';
 @import '../../pug/blocks/event-leader/style';
 @import '../../pug/blocks/event-price-block/style';
@@ -27,6 +28,8 @@
 @import '../../pug/components/event-single-prices/style';
 @import '../../pug/components/event-single-feedbacks/style';
 
+@import '../../pug/blocks/b-event-filters/b-event-filters';
+@import '../../pug/blocks/b-event-list-item/b-event-list-item';
 
 
 
@@ -36,7 +39,14 @@
 
 
 
-    
+
+
+
+
+
+
+
+
 
 
 

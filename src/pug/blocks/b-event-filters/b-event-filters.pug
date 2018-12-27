@@ -1,12 +1,12 @@
-+b.b-event-filters
-    +e.container.container
++b.b-event-filters--row
+    +e.container.container--970.p-x0
         +e.drops
             +b.input-item--city-filter
-                +e.label
+                +e.label.label
                     p Город
-                +e.data
-                    +b.ui-dropdown
-                        +e({tag:'SELECT'}).select
+                +e.data.b-event-filters__dropdown
+                    +b.ui-dropdown--city.--white-bg
+                        +e({tag:'SELECT'}).select.b-event-filters--city-select
                             option Город
                             option Хабаровск
                             option Владивосток
@@ -14,11 +14,11 @@
                             option Урюпинск
                             option Бобруйск
             +b.input-item--title-filter
-                +e.label
+                +e.label.label
                     p Название тренинга
-                +e.data
-                    +b.ui-dropdown
-                        +e({tag:'SELECT'}).select
+                +e.data.b-event-filters__dropdown
+                    +b.ui-dropdown--event_name.--white-bg
+                        +e({tag:'SELECT'}).select.b-event-filters--event_name-select
                             option Инструменты фасилитации для руководителей
                             option Какой-то тренинг 1
                             option Какой-то тренинг 2

@@ -1,0 +1,22 @@
+.p-page{
+    &-header{
+        &__container{
+            padding-top: 100px;
+            padding-bottom: 50px;
+        }
+        
+        &__title{
+            font-size: 2em;
+            font-weight: 800;
+            &--center{
+                text-align: center;
+            }
+        }
+        &__description{
+            margin-top: 25px;
+        }
+    }
+    
+    
+    
+}
