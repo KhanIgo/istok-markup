@@ -2,6 +2,15 @@
     background: $color-grey-4;
     
     &__row{
-        padding-top: 100px;
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+}
+
+.event-month{
+    &__title{
+        font-size: 1.15em;
+        font-weight: 800;
+        margin-bottom: 45px;
     }
 }

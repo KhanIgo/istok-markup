@@ -6,6 +6,7 @@ html(lang='RU-ru')
         link(rel='stylesheet', href='assets/libs/hamburger/hamburgers.css')
         link(rel='stylesheet', href='assets/fonts/Circe/font.css')
         link(rel='stylesheet', href='assets/css/style.css')
+        script(src='assets/libs/jquery/jquery-3.3.1.min.js')
     body
         include parts/_mixins.pug
         include parts/_header.pug
@@ -24,9 +25,8 @@ html(lang='RU-ru')
   
         include parts/_footer.pug
         
-        script(src='assets/libs/jquery/jquery-3.2.1.min.js')
-        script(src='assets/libs/mobile-detect/mobile-detect.min.js')
-        script(src='assets/js/responsive.js')
         script(src='assets/js/main.js')
+        script(src='assets/js/blocks/b-ui-accordeon/b-ui-accordeon.js')
+        
         script.
             jQuery(function($) {});

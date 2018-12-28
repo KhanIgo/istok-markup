@@ -2,7 +2,7 @@ doctype html
 html(lang='RU-ru')
     head
         meta(charset='UTF-8')
-        title Календарь мероприятий
+        title Index page
         link(rel='stylesheet', href='assets/libs/hamburger/hamburgers.css')
         link(rel='stylesheet', href='assets/fonts/Circe/font.css')
         link(rel='stylesheet', href='assets/css/style.css')
@@ -10,30 +10,11 @@ html(lang='RU-ru')
         include parts/_mixins.pug
         include parts/_header.pug
         
-        +b.MAIN.p-event-list
-            +b.p-page-header--row
-                +e.container.container--970.px0
-                    +e.title
-                        p Календарь мероприятий
-                    +e.description
-                        p Если вы хотите подробнее узнать о проводимых мероприятиях тренинг-центра "Исток", напишите нам или позвоните по телефону +7 (914) 159-31-13 - мы ответим на все ваши вопросы. 
+        +b.MAIN.p-.row
             
-            
-            include blocks/b-event-filters/index.pug
-            
-            +b.row.p-event-list__row
-                +b.container--970.event-month.px0
-                
-                    include blocks/b-event-list-item/index.pug
-                    include blocks/b-event-list-item/index.pug
-                    include blocks/b-event-list-item/index.pug
-                    include blocks/b-event-list-item/index.pug
-                    include blocks/b-event-list-item/index.pug
-                
-            
+            +b.p-
+                +b.container
                     
-            
-  
         include parts/_footer.pug
         
         script(src='assets/libs/jquery/jquery-3.2.1.min.js')
