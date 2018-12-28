@@ -1,52 +1,25 @@
-@import 'vars';
-@import 'mixins';
-@import 'reset';
-@import 'font';
-@import 'grid';
-@import 'ui';
-@import 'typography';
-@import 'cf7';
-@import 'forms';
-@import 'header';
-@import 'content';
-@import 'footer';
-@import 'page';
-@import 'elements';
-@import 'p-event-list';
-@import '../../pug/blocks/ui-accordeon/style';
-@import '../../pug/blocks/event-leader/style';
-@import '../../pug/blocks/event-price-block/style';
-@import '../../pug/blocks/event-feedback-block/style';
-@import '../../pug/components/event-single-top/style';
-@import '../../pug/components/event-single-contact/style';
-@import '../../pug/components/event-single-text/style';
-@import '../../pug/components/event-single-leading/style';
-@import '../../pug/components/event-single-for/style';
-@import '../../pug/components/event-single-result/style';
-@import '../../pug/components/event-single-program/style';
-@import '../../pug/components/event-single-cert/style';
-@import '../../pug/components/event-single-prices/style';
-@import '../../pug/components/event-single-feedbacks/style';
+@import 'common';
 
-@import '../../pug/blocks/b-event-filters/b-event-filters';
-@import '../../pug/blocks/b-event-list-item/b-event-list-item';
+@import 'pages/p-event-list';
+@import 'blocks/b-event-filters';
+@import 'blocks/b-event-item';
+@import 'blocks/b-event-list-item';
+@import 'blocks/b-event-feedback-block';
+@import 'blocks/b-event-leader';
+@import 'blocks/b-event-price-block';
+@import 'blocks/b-ui-accordeon';
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@import 'components/c-event-single-cert';
+@import 'components/c-event-single-check';
+@import 'components/c-event-single-contact';
+@import 'components/c-event-single-feedbacks';
+@import 'components/c-event-single-for';
+@import 'components/c-event-single-leading';
+@import 'components/c-event-single-price';
+@import 'components/c-event-single-prices';
+@import 'components/c-event-single-program';
+@import 'components/c-event-single-reg';
+@import 'components/c-event-single-result';
+@import 'components/c-event-single-text';
+@import 'components/c-event-single-top';
+@import 'components/c-program-accordeon';

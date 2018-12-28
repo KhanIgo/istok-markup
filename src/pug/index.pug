@@ -12,22 +12,23 @@ html(lang='RU-ru')
         
         +b.MAIN.p-event-list
             +b.p-page-header--row
-                +e.container.container--970.p-x0
+                +e.container.container--970.px0
                     +e.title
                         p Календарь мероприятий
                     +e.description
                         p Если вы хотите подробнее узнать о проводимых мероприятиях тренинг-центра "Исток", напишите нам или позвоните по телефону +7 (914) 159-31-13 - мы ответим на все ваши вопросы. 
             
             
-            include blocks/b-event-filters/b-event-filters.pug
+            include blocks/b-event-filters/index.pug
             
             +b.row.p-event-list__row
-                +b.container--970.event-month.p-x0
+                +b.container--970.event-month.px0
                 
-                    include blocks/b-event-list-item/b-event-list-item.pug
-                    include blocks/b-event-list-item/b-event-list-item.pug
-                    include blocks/b-event-list-item/b-event-list-item.pug
-                    include blocks/b-event-list-item/b-event-list-item.pug
+                    include blocks/b-event-list-item/index.pug
+                    include blocks/b-event-list-item/index.pug
+                    include blocks/b-event-list-item/index.pug
+                    include blocks/b-event-list-item/index.pug
+                    include blocks/b-event-list-item/index.pug
                 
             
                     

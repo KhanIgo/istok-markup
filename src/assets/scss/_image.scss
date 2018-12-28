@@ -1,0 +1,33 @@
+@import 'variables';
+
+/*!
+ * ИЗОБРАЖЕНИЯ
+ */
+
+/*!
+ * Стили для одиночного изображения
+ */
+/* stylelint-disable-next-line */
+@mixin single-img() {
+  border-style: none !important;
+  height: auto;
+  margin-left: -75px;
+  max-width: 770px;
+}
+
+/*!
+ * Стили для подписи одиночного изображения
+ */
+/* stylelint-disable-next-line */
+@mixin single-img-caption() {
+  color: #000;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  //margin: 0;
+  //margin-top: 4px;
+}
+
+@mixin gallery() {
+  display: flex;
+}

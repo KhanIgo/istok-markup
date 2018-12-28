@@ -1,0 +1,121 @@
+@import 'variables';
+
+/*!
+ * СТИЛИ СПИСКОВ
+ */
+
+/*!
+ * Стили маркированного списка
+ */
+/* stylelint-disable-next-line */
+@mixin ul() {
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -30px;
+  max-width: 600px;
+}
+
+/*!
+ * Стили элемента маркированного списка
+ */
+/* stylelint-disable-next-line */
+@mixin ul-li() {
+  color: $color-black;
+  font-family: $font-raleway;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding-left: 13px;
+
+  &:nth-child(1) {
+    margin-top: 0;
+  }
+
+  &:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+}
+
+/*!
+ * Стили нумерованного списка
+ */
+/* stylelint-disable-next-line */
+@mixin ol() {
+  counter-reset: num;
+  list-style-type: none;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -30px;
+  max-width: 600px;
+  padding: 0;
+}
+
+/*!
+ * Стили элемента нумерованного списка
+ */
+/* stylelint-disable-next-line */
+@mixin ol-li() {
+  color: $color-black;
+  font-family: $font-raleway;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+
+  &::before {
+    color: $color-gray-1;
+    content: counter(num) '.';
+    counter-increment: num;
+    font-size: 16px;
+    font-weight: 600;
+    padding-right: 13px;
+  }
+}
+
+/*!
+ * Стили маркированного списка на 2 уровне вложенности
+ */
+/* stylelint-disable-next-line */
+@mixin ul-level-2() {
+  @include ul;
+  margin-bottom: 0;
+  padding-top: 30px;
+}
+
+/*!
+ * Стили элементов маркированного списка на 2 уровне вложенности
+ */
+/* stylelint-disable-next-line */
+@mixin ul-li-level-2() {
+  @include ul-li;
+  list-style-type: disc;
+
+  &::before {
+    content: '';
+    padding: 0;
+  }
+}
+
+/*!
+ * Стили нумерованного списка на 2 уровне вложенности
+ */
+/* stylelint-disable-next-line */
+@mixin ol-level-2() {
+  @include ol;
+
+  margin-bottom: 0;
+  padding-top: 30px;
+}
+
+/*!
+ * Стили элементов нумерованного списка н 2 уровне вложенности
+ */
+/* stylelint-disable-next-line */
+@mixin ol-li-level-2() {
+  @include ol-li;
+}

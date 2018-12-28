@@ -1,0 +1,73 @@
+@import 'variables';
+
+/*!
+ * СТИЛИ ТАБЛИЦ
+ */
+
+/*!
+ * Стили для таблицы
+ */
+/* stylelint-disable-next-line */
+@mixin table() {
+  border-collapse: collapse;
+  margin-left: 75px;
+}
+
+/*!
+ * Стили для заголовка таблицы
+ *
+ * Как и th, обычно данный стиль можно не использовать, а считать, что заголовок
+ * таблицы - 1 строка тела таблицы, так пользователю будет проще оформлять
+ * таблицы
+ */
+/* stylelint-disable-next-line */
+@mixin thead() {
+}
+
+/*!
+ * Стили для тела таблицы
+ */
+/* stylelint-disable-next-line */
+@mixin tbody() {
+  background: $color-gray-4;
+  font-family: $font-raleway;
+  font-weight: 600;
+}
+
+/*!
+ * Стили для строки таблицы
+ */
+/* stylelint-disable-next-line */
+@mixin tr() {
+  border-bottom: 15px solid $color-background-default;
+
+  &:first-child {
+    background: $color-background-default;
+    border-bottom: 0;
+    color: $color-gray-1;
+    font-weight: normal;
+  }
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+/*!
+ * Стили для ячейки заголовка таблицы
+ *
+ * Как и thead, обычно данный стиль можно не использовать, а считать, что заголовок
+ * таблицы - 1 строка тела таблицы, так пользователю будет проще оформлять
+ * таблицы
+ */
+/* stylelint-disable-next-line */
+@mixin th() {
+}
+
+/*!
+ * Стили для ячейки таблицы
+ */
+/* stylelint-disable-next-line */
+@mixin td() {
+  padding: 26px;
+}

@@ -1,0 +1,319 @@
+@import 'vars';
+@import 'mixins';
+@import 'reset';
+@import 'font';
+@import 'grid';
+
+@import 'general';
+@import 'image';
+@import 'typography';
+@import 'table';
+@import 'list';
+@import 'ui';
+@import 'typography';
+@import 'cf7';
+@import 'forms';
+@import 'header';
+@import 'content';
+@import 'footer';
+@import 'page';
+@import 'elements';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@mixin frontend-styles($prefix: '.cm') {
+  #{$prefix} {
+    // ОБЩИЕ СТИЛИ
+
+    @include base;
+    @include frontend-base;
+
+    // ИЗОБРАЖЕНИЯ
+
+    &__image {
+      @include single-img;
+    }
+
+    &__div.wp-caption {
+      #{$prefix}__paragraph {
+        @include single-img-caption;
+      }
+    }
+
+    &__div.gallery {
+      @include gallery;
+    }
+
+    &__dl {
+      @include single-img;
+    }
+
+    // ТИПОГРАФИКА
+
+    &__header {
+      @include header;
+
+      &--level-1 {
+        @include h1;
+      }
+
+      &--level-2 {
+        @include h2;
+      }
+
+      &--level-3 {
+        @include h3;
+      }
+
+      &--level-4 {
+        @include h4;
+      }
+
+      &--level-5 {
+        @include h5;
+      }
+
+      &--level-6 {
+        @include h6;
+      }
+    }
+
+    &__paragraph:not(.wp-caption-text) {
+      @include p;
+    }
+
+    &__link {
+      @include a;
+    }
+
+    &__text--italic {
+      @include i;
+    }
+
+    &__text--bold {
+      @include b;
+    }
+
+    &__blockquote {
+      @include blockquote;
+    }
+
+    // ТАБЛИЦЫ
+
+    &__table {
+      @include table;
+    }
+
+    &__table-head {
+      @include thead;
+    }
+
+    &__table-body {
+      @include tbody;
+    }
+
+    &__table-row {
+      @include tr;
+    }
+
+    &__table-head-cell {
+      @include th;
+    }
+
+    &__table-cell {
+      @include td;
+    }
+
+    // СПИСКИ
+
+    &__mark-list {
+      @include ul;
+    }
+
+    &__mark-list #{$prefix}__list-item {
+      @include ul-li;
+    }
+
+    &__number-list {
+      @include ol;
+    }
+
+    &__number-list #{$prefix}__list-item {
+      @include ol-li;
+    }
+
+    &__list-item #{$prefix}__mark-list {
+      @include ul-level-2;
+    }
+
+    /* stylelint-disable-next-line */
+    &__list-item #{$prefix}__mark-list #{$prefix}__list-item {
+      @include ul-li-level-2;
+    }
+
+    &__list-item #{$prefix}__number-list {
+      @include ol-level-2;
+    }
+
+    /* stylelint-disable-next-line */
+    &__list-item #{$prefix}__number-list #{$prefix}__list-item {
+      @include ol-li-level-2;
+    }
+  }
+}
+
+@mixin wp-editor-styles($wp-editor-class: '.wp-editor') {
+  #{$wp-editor-class} {
+    // ОБЩИЕ СТИЛИ
+
+    @include base;
+    @include editor-base;
+
+    // ИЗОБРАЖЕНИЯ
+
+    img {
+      @include single-img;
+    }
+
+    dl.wp-caption {
+      dd {
+        @include single-img-caption;
+      }
+    }
+
+    // ТИПОГРАФИКА
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      @include header;
+    }
+
+    h1 {
+      @include h1;
+    }
+
+    h2 {
+      @include h2;
+    }
+
+    h3 {
+      @include h3;
+    }
+
+    h4 {
+      @include h4;
+    }
+
+    h5 {
+      @include h5;
+    }
+
+    h6 {
+      @include h6;
+    }
+
+    p {
+      @include p;
+    }
+
+    a {
+      @include a;
+    }
+
+    i,
+    em {
+      @include i;
+    }
+
+    b,
+    strong {
+      @include b;
+    }
+
+    blockquote {
+      @include blockquote;
+    }
+
+    // ТАБЛИЦЫ
+
+    table {
+      @include table;
+      left: 85px;
+    }
+
+    thead {
+      @include thead;
+    }
+
+    tbody {
+      @include tbody;
+    }
+
+    tr {
+      @include tr;
+    }
+
+    th {
+      @include th;
+    }
+
+    td {
+      @include td;
+    }
+
+    // СПИСКИ
+
+    ul {
+      @include ul;
+    }
+
+    ul li {
+      @include ul-li;
+    }
+
+    ol {
+      @include ol;
+    }
+
+    ol li {
+      @include ol-li;
+    }
+
+    li ul {
+      @include ul-level-2;
+    }
+
+    /* stylelint-disable-next-line */
+    li ul li {
+      @include ul-li-level-2;
+    }
+
+    li ol {
+      @include ol-level-2;
+    }
+
+    /* stylelint-disable-next-line */
+    li ol li {
+      @include ol-li-level-2;
+    }
+  }
+}

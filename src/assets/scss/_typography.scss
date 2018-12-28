@@ -1,144 +1,159 @@
-body{
-    font-size: 14px;
-    color: #333333;
-}
-h1{ 
-    font-size: 3.42em; 
-    line-height: 1em;
-}
-h2{ 
-    font-size: 2em; 
-    line-height: 1em;
-}
-h3{ 
-    font-size: 1.42em; 
-    line-height: 1em;
-}
-h4{ 
-    font-size: 1.28em; 
-    line-height: 1em;
-}
-h5{
-    font-size: 1.15em; 
-    line-height: 1em;
-}
-h6{ 
-    font-size: 1em; 
-    line-height: 1em;
+@import 'variables';
+
+/*!
+ * СТИЛИ ТИПОГРАФИКИ
+ */
+
+/*!
+ * Общие стили для всех заголовков
+ */
+/* stylelint-disable-next-line */
+@mixin header() {
+  font-family: $font-raleway;
+  margin-left: 75px;
+  margin-right: 75px;
+  padding-bottom: 15px;
 }
 
-p{
-    //margin-bottom: 1.5em;
-    //line-height: 1.4em;
+/*!
+ * Стили для заголовков 1 уровня
+ */
+/* stylelint-disable-next-line */
+@mixin h1() {
 }
 
-.tdn{
-    text-decoration: none;
-}
-.c-inherit{
-    color: inherit
-}
-.semi-bold{
-    font-weight: 600;
-}
-span.spacer{
-    display: inline-block;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    color: transparent;
-    background: transparent;
+/*!
+ * Стили для заголовков 2 уровня
+ */
+/* stylelint-disable-next-line */
+@mixin h2() {
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 0;
 }
 
-.label{
-    color: $color-grey;
-}
-.ta-center{
-    text-align: center;
-}
-
-ul{
-    list-style-position: inside;
-    li{}
+/*!
+ * Стили для заголовков 3 уровня
+ */
+/* stylelint-disable-next-line */
+@mixin h3() {
+  font-size: 14px;
+  padding-bottom: 30px;
 }
 
-.block-title{
-    font-size: 1.42em;
-    font-weight: 600;
-    &--large{
-        font-size: 2em;
-    }
+/*!
+ * Стили для заголовков 4 уровня
+ */
+/* stylelint-disable-next-line */
+@mixin h4() {
 }
 
-.p-margin{
-    p{
-        margin: 0.75em 0;
-        &:first-child{margin-top: 0;}
-        &:last-child{margin-bottom: 0;}
-    }
+/*!
+ * Стили для заголовков 5 уровня
+ */
+/* stylelint-disable-next-line */
+@mixin h5() {
 }
 
-.tdn{ text-decoration: none; }
-.uppercase{ text-transform: uppercase; }
+/*!
+ * Стили для заголовков 6 уровня
+ */
+/* stylelint-disable-next-line */
+@mixin h6() {
+}
 
-.fw-100{ font-weight: 100; }
-.fw-200{ font-weight: 200; }
-.fw-400{ font-weight: 400; }
-.fw-500{ font-weight: 500; }
-.fw-600{ font-weight: 600; }
-.fw-700{ font-weight: 700; }
-.fw-800{ font-weight: 800; }
+/*!
+ * Стили для абзацев
+ */
+/* stylelint-disable-next-line */
+@mixin p() {
+  font-family: $font-raleway;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  margin-left: 75px;
+  margin-right: 75px;
+  padding-bottom: 30px;
+}
 
+/*!
+ * Стили для ссылок
+ */
+/* stylelint-disable-next-line */
+@mixin a() {
+  color: $color-orange;
+  font-weight: 600;
+  text-decoration: none;
 
-.fz_0-5{ font-size: 0.5em; }
-.fz_0-55{ font-size: 0.55em; }
-.fz_0-6{ font-size: 0.6em; }
-.fz_0-65{ font-size: 0.65em; }
-.fz_0-7{ font-size: 0.7em; }
-.fz_0-75{ font-size: 0.75em; }
-.fz_0-8{ font-size: 0.80em; }
-.fz_0-85{ font-size: 0.85em; }
-.fz_0-9{ font-size: 0.9em; }
-.fz_0-95{ font-size: 0.95em; }
+  &:hover {
+    text-decoration: underline;
+  }
+}
 
-.fz_1{ font-size: 1em; }
-.fz_1-05{ font-size: 1.05em; }
-.fz_1-1{ font-size: 1.1em; }
-.fz_1-15{ font-size: 1.15em; }
-.fz_1-2{ font-size: 1.2em; }
-.fz_1-25{ font-size: 1.25em; }
-.fz_1-3{ font-size: 1.3em; }
-.fz_1-35{ font-size: 1.35em; }
-.fz_1-4{ font-size: 1.4em; }
-.fz_1-45{ font-size: 1.45em; }
-.fz_1-5{ font-size: 1.5em; }
-.fz_1-55{ font-size: 1.55em; }
-.fz_1-6{ font-size: 1.6em; }
-.fz_1-65{ font-size: 1.65em; }
-.fz_1-7{ font-size: 1.7em; }
-.fz_1-75{ font-size: 1.75em; }
-.fz_1-8{ font-size: 1.80em; }
-.fz_1-85{ font-size: 1.85em; }
-.fz_1-9{ font-size: 1.9em; }
-.fz_1-95{ font-size: 1.95em; }
-.fz_2{ font-size: 2em; }
-.fz_2-05{ font-size: 2.05em; }
-.fz_2-1{ font-size: 2.1em; }
-.fz_2-15{ font-size: 2.15em; }
-.fz_2-2{ font-size: 2.2em; }
-.fz_2-25{ font-size: 2.25em; }
-.fz_2-3{ font-size: 2.3em; }
-.fz_2-35{ font-size: 2.35em; }
-.fz_2-4{ font-size: 2.4em; }
-.fz_2-45{ font-size: 2.45em; }
-.fz_2-5{ font-size: 2.5em; }
-.fz_2-55{ font-size: 2.55em; }
-.fz_2-6{ font-size: 2.6em; }
-.fz_2-65{ font-size: 2.65em; }
-.fz_2-7{ font-size: 2.7em; }
-.fz_2-75{ font-size: 2.75em; }
-.fz_2-8{ font-size: 2.8em; }
-.fz_2-85{ font-size: 2.85em; }
-.fz_2-9{ font-size: 2.9em; }
-.fz_2-95{ font-size: 2.95em; }
-.fz_3{ font-size: 3em; }
+/*!
+ * Стили для жирного текста
+ */
+/* stylelint-disable-next-line */
+@mixin b() {
+  font-weight: bold;
+}
+
+/*!
+ * Стили для курсивного текста
+ */
+/* stylelint-disable-next-line */
+@mixin i() {
+}
+
+/*!
+ * Стили для цитат
+ */
+/* stylelint-disable-next-line */
+@mixin blockquote() {
+  margin-left: -70px;
+  margin-right: 0;
+  max-width: 670px;
+  padding-bottom: 30px;
+
+  :only-child {
+    border-left: 6px solid $color-orange;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 30px;
+  }
+}
+
+body {
+  color: #333;
+  font-size: 14px;
+}
+
+.tdn {
+  text-decoration: none;
+}
+
+.c-inherit {
+  color: inherit;
+}
+
+.semi-bold {
+  font-weight: 600;
+}
+
+ul {
+  list-style-position: inside;
+
+  //li {}
+}
+
+.block-title {
+  font-size: 1.42em;
+  font-weight: 600;
+
+  &--large {
+    font-size: 2em;
+  }
+}

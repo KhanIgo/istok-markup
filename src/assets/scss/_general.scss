@@ -1,0 +1,38 @@
+@import 'variables';
+
+/*!
+ * ОБЩИЕ СТИЛИ
+ */
+
+/*!
+ * Общие стили для фронтэнда и редактора WP
+ */
+/* stylelint-disable-next-line */
+@mixin base() {
+  color: $color-black;
+  margin-left: 85px;
+}
+
+/*!
+ * Общие стили для фронтэнда
+ */
+/* stylelint-disable-next-line */
+@mixin frontend-base() {
+  width: 600px;
+}
+
+/*!
+ * Общие стили для редактора WP
+ */
+/* stylelint-disable-next-line */
+@mixin editor-base() {
+  border-left: 1px dotted #000;
+  border-right: 1px dotted #000;
+  margin: auto;
+
+  max-width: 770px;
+
+  * {
+    font-family: $font-raleway;
+  }
+}
