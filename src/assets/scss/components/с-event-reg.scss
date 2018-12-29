@@ -1,0 +1,27 @@
+$c-selector: ".c-event-reg";
+#{$c-selector}{
+    &--row{
+        padding-top: 150px;
+        padding-bottom: 50px;
+    }
+    &__container{
+    }
+    &__title{
+        text-align: center;
+        font-weight: 600;
+        font-size: 2.05em;
+    }
+    &__desc{
+        text-align: center;
+        margin-top: 30px;
+    }
+    &__btn-wrpr{
+        text-align: center;
+        margin-top: 40px;
+    }
+    &__btn{
+        width: 100%;
+        max-width: 410px;
+        font-size: 1.3em;
+    }
+}

@@ -13,8 +13,9 @@ jQuery(function($){
     }
     
     
-    $body.on('click', '.ui-accordeon-item__extend', function(e){
+    $body.on('click', '.ui-accordeon-item__extend', function(e, $item){
         e.preventDefault();
+        console.log($item);
         let $this = $(this);
         let $this_item = $this.closest('.ui-accordeon-item');
         show_item($this_item);

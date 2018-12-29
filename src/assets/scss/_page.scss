@@ -1,3 +1,19 @@
+.page-main{
+    &--bg_grey{
+        background-color: #E2E2E2;
+    }
+    &--bg_white{
+        background-color: #fff;
+    }
+}
+
+.bg-grey{
+    background-color: #E2E2E2;
+}
+.bg-white{
+    background-color: #fff;
+}
+
 .p-page {
   &-header {
     &__container {

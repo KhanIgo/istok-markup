@@ -11,17 +11,27 @@ html(lang='RU-ru')
         include parts/_mixins.pug
         include parts/_header.pug
         
-        main
-            include components/c-event-single-top/index.pug
-            include components/c-event-single-contact/index.pug
-            include components/c-event-single-text/index.pug
-            include components/c-event-single-leading/index.pug
-            include components/c-event-single-for/index.pug
-            include components/c-event-single-result/index.pug
-            include components/c-event-single-program/index.pug
-            include components/c-event-single-cert/index.pug
-            include components/c-event-single-prices/index.pug
-            include components/c-event-single-feedbacks/index.pug
+        main.page-main.bg-grey
+            .container.px0.bg-white
+                include components/c-event-single-top/index.pug
+                include components/c-event-single-contact/index.pug
+                include components/c-event-single-text/index.pug
+                include components/c-event-single-leading/index.pug
+                include components/c-event-single-for/index.pug
+                include components/c-event-single-result/index.pug
+                include components/c-event-single-program/index.pug
+                include components/c-event-single-cert/index.pug
+                include components/c-event-single-prices/index.pug
+                include components/c-event-single-feedbacks/index.pug
+            
+            include components/с-event-reg/index.pug
+            include components/c-event-soon/index.pug
+            
+            
+            
+            
+            
+            
   
         include parts/_footer.pug
         
