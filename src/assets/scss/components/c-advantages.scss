@@ -1,0 +1,41 @@
+.c-advantages{
+    
+    
+    &__container{
+        padding: 100px 15px 50px 15px;
+    }
+    &__title{
+        text-align: center;
+        font-size: 2em;
+        font-weight: 800;
+    }
+    &__wrpr{
+        margin-top: 65px;
+    }
+    &__list{
+        list-style: none;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0 auto;
+        max-width: 1000px;
+    }
+    &-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 200px;
+        margin: 20px 20px 50px 20px;
+        &__icon{
+            width: 50px;
+            height: 50px;
+            background-image: url('#{$assets-path}/single-event-for-check.svg');
+            
+        }
+        &__desc{
+            margin-top: 20px;
+            text-align: center;
+        }
+    }
+}

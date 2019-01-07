@@ -1,0 +1,42 @@
+.p-about{
+    &__top{
+        background-image: url('/images/p-about-top-bg.jpg');
+        background-position: center;
+    }
+    
+    
+    //&-checks{}
+    &-checks__container{
+        padding: 90px 15px;
+    }
+    &-checks__list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &-checks__desc{
+        text-align: center;
+        margin-top: 20px;
+        color: $color-grey;
+    }
+    
+    &-check{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        
+        flex: 25% 0 0;
+        &__icon{
+            display: block;
+            width: 30px;
+            height: 30px;
+            background-color: $color-orange;
+            mask-image: url('#{$assets-path}/result-check.svg');
+            mask-repeat: no-repeat;
+            mask-size: cover;
+        }
+        &__desc{
+            margin-top: 15px;
+            line-height: 1.45em;
+        }
+    }
+}

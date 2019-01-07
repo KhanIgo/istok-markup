@@ -1,0 +1,37 @@
+
+.b-team-item{
+    display: flex;
+    max-width: 500px;
+    margin-bottom: 60px;
+    &__photo{
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        overflow: hidden;
+        flex-shrink: 0;
+        flex-grow: 0;
+            
+    }
+    &__info{
+        margin-left: 20px;
+        padding: 10px;
+        flex-grow: 1;
+    }
+    &__name{
+        font-size: 1.33em;
+    }
+    &__desc{
+        color: $color-grey-3;
+        font-weight: 200;
+        margin-top: 10px;
+        line-height: 1.7em;
+    }
+    &__portfolio{
+        margin-top: 10px;
+    }
+    &__portfolio-link{
+        color: $color-green;
+        text-decoration: none;
+    }
+                
+}

@@ -1,0 +1,22 @@
+.c-our-partners{
+    background-color: $color-grey-4;    
+    
+    &__container{
+        padding: 60px 15px 45px;
+    }
+    &__title{
+        font-size: 2em;
+        text-align: center;
+        font-weight: 800;
+    }
+    &__list-wrpr{
+        margin: 35px auto 0;
+        padding: 0 60px;
+    }
+    &__list{
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}

@@ -1,6 +1,5 @@
 @import 'common';
 
-@import 'pages/p-event-list';
 @import 'blocks/b-event-filters';
 @import 'blocks/b-event-item';
 @import 'blocks/b-event-list-item';
@@ -10,6 +9,7 @@
 @import 'blocks/b-ui-accordeon';
 @import 'blocks/b-event-soon';
 @import 'blocks/b-subscribe';
+@import 'blocks/b-team-item';
 
 @import 'components/c-event-single-cert';
 @import 'components/c-event-single-check';
@@ -27,8 +27,11 @@
 @import 'components/c-program-accordeon';
 @import 'components/с-event-reg';
 @import 'components/c-event-soon';
+@import 'components/c-our-clients';
+@import 'components/c-advantages';
 @import 'components/c-subscribe';
+@import 'components/c-our-team';
+@import 'components/c-our-partners';
 
-
-
-
+@import 'pages/p-event-list';
+@import 'pages/p-about';

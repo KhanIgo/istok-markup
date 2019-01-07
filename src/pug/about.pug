@@ -1,0 +1,53 @@
+doctype html
+html(lang='RU-ru')
+    head
+        meta(charset='UTF-8')
+        title About page
+        link(rel='stylesheet', href='assets/libs/hamburger/hamburgers.css')
+        link(rel='stylesheet', href='assets/fonts/Circe/font.css')
+        link(rel='stylesheet', href='assets/css/style.css')
+    body
+        include parts/_mixins.pug
+        include parts/_header.pug
+        
+        +b.MAIN.p-about.row
+            +page-header('МЕЖДУНАРОДНЫЙ ЦЕНТР <br>КОУЧИНГА ISTOK', 'Обучение профессиональному коучингу с 2012 года.', 'p-about__top')
+            
+            +b.p-about-checks.row
+                +e.container.container
+                    +e.list
+                        +page-about-check('ICC ISTOK – это международные стандарты качества, полный спектр коучинговых услуг и возможности обучаться из любой точки мира. <br><br><img src="/images/ICF-logo.png">')
+                        +page-about-check('Услуги центра: индивидуальный и командный коучинг, обучение коучингу, в том числе в корпоративном формате, а также менторинг, супервизии и обучение для профессиональных коучей.')
+                        +page-about-check('Центр является аккредитованным провайдером Международной Федерации Коучинга ICF.')
+                        +page-about-check('Все услуги доступны онлайн.')
+                    
+                    +e.desc
+                        p В Международном центре коучинга ISTOK прошли обучение коучингу #[br]руководители ряда компаний среднего и крупного бизнеса России.
+                        
+            include components/c-our-clients/index.pug    
+            include components/c-advantages/index.pug    
+            include components/c-our-team/index.pug    
+            include components/c-our-partners/index.pug    
+            
+            
+            
+            
+                
+            //+b.p-
+                +e.container
+                
+                
+            
+            
+            include components/c-subscribe/index.pug
+                
+                
+                    
+        include parts/_footer.pug
+        
+        script(src='assets/libs/jquery/jquery-3.2.1.min.js')
+        script(src='assets/libs/mobile-detect/mobile-detect.min.js')
+        script(src='assets/js/responsive.js')
+        script(src='assets/js/main.js')
+        script.
+            jQuery(function($) {});

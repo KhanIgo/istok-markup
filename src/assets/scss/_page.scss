@@ -13,6 +13,12 @@
 .bg-white{
     background-color: #fff;
 }
+.bg-green{
+    background-color: $color-green;
+}
+.bg-orange{
+    background-color: $color-orange;
+}
 
 .p-page {
   &-header {
@@ -34,4 +40,18 @@
       margin-top: 25px;
     }
   }
+}
+
+.page-top{
+    color: white;
+    text-align: center;
+    &__container{
+        padding: 140px 15px;
+    }
+    &__title{
+        font-size: 1.8em;
+    }
+    &__desc{
+        margin-top: 15px;
+    }
 }

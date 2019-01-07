@@ -60,8 +60,14 @@ $btn: '.btn';
 
   &--white {
     background: $color-white;
-    border-radius: 1.5em;
+    //border-radius: 1.5em;
     padding: 0.85em 2em;
+    transition: 350ms;
+  }
+    &--white-trans {
+    background-color: transparent;
+    color: $color-white;
+    border: solid 5px $color-white;
     transition: 350ms;
   }
 
@@ -79,7 +85,13 @@ $btn: '.btn';
 
   &--large {
     font-size: 1.35em;
+      padding: 1.1em;
   }
+      
+    &--full-width{
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .ui {
@@ -200,4 +212,14 @@ $btn: '.btn';
       color: $color-purple;
     }
   }
+    
+    &-text{
+        padding: 1.3em 1.5em;
+        outline: 0;
+        width: 100%;
+        
+        &--large{
+            font-size: 1.35em;
+        }
+    }
 }

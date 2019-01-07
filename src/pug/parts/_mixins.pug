@@ -1,2 +1,130 @@
 include _bemto.pug
 //mixin article_item(title, image, src, ago, excerpt)
+
+mixin page-header(title, desc, extClass)
+    +b.page-top--row.row(class=""+extClass)
+        +e.container.container  
+            +e.title
+                h1!= title
+            +e.desc!= desc
+            
+
+
+mixin page-about-check(text)
+    +b.p-about-check
+        +e.I.icon
+        +e.desc!= text
+        
+mixin our-client-item(image, num)
+    +b.LI.c-our-client-item(class="c-our-client-item--"+num)
+        +e.A.link(href="#")
+            +e.IMG.img(src="/images/clients/"+image)
+
+mixin single_event_result(text)
+    +b.LI.single-event-result
+        //img(src="/images/result-check.svg")
+        +e.P.text
+            != text
+            
+mixin single_event_for_check(text)
+    +b.single-event-for-check
+        +e.icon
+            img(src="/images/single-event-for-check.svg")
+        +e.text
+            p!= text
+            
+mixin advantage-item(text)
+    +b.LI.c-advantages-item
+        +e.I.icon
+        +e.desc
+            p!= text
+            
+mixin event-soon-card(date, name, type)
+    +b.b-event-soon-card
+        +e.date
+            p= date
+        +e.name
+            +e.A(href="#").link= name
+        +e.type
+            p= type
+            
+mixin event-soon-card-to-all()
+    +b.b-event-soon-card--to-all
+        +e.A(href="#").link--to-all
+            +e.I.icon--to-all
+            span Смотреть календарь #[br]мероприятий
+            
+mixin se_feedback_item(photo, name, job, text)
+    +b.feedback
+        +e.photo
+            img(src=""+ photo)
+        +e.info
+            +e.name
+                p= name
+            +e.job
+                p= job
+            +e.text
+                p= text
+            
+            
+mixin leader()
+    +b.event-leader
+        +e.photo
+            img(src="/images/leader-photo.png")
+        +e.info
+            +e.name
+                p Катерина Костюкова
+            +e.desc
+                ul
+                    li Коуч продвинутого уровня PCC ICF 
+                    li Ментор коучей 
+                    li Специализация – бизнес-коучинг, коучинг     первых лиц 
+                    li Более 1500 часов сессий
+                
+mixin team-leader()
+    +b.b-team-item
+        +e.photo
+            img(src="/images/team-photo.png")
+        +e.info
+            +e.name
+                p Катерина Костюкова
+            +e.desc
+                p Лидер International Coach Centre ISTOK, коуч PCC ICF, коуч первых лиц руководителей, сертифицированный ментор коучей
+                +e.portfolio
+                    +e.A.portfolio-link(href="#") Скачать портфолио
+                
+                
+mixin our-partners(logo)
+    +e.LI.our-partners-item
+        +e.A.logo(href="#")
+            +e.IMG.logo(src="/images/partners/"+logo)
+                    
+                    
+mixin event_price(name, desc, price)
+    +b.event-price
+        +e.name
+            p= name
+        +e.desc
+            != desc
+        +e.HR.limiter
+        +e.price-label
+            p Стоимость
+        +e.price-value
+            p= price 
+                span.rouble
+                
+mixin accordeon_item(name, text)
+    +b.ui-accordeon-item
+        +e.header
+            +e.header-text
+                +e.header-date
+                    p 16-18 ноября
+                +e.header-title 
+                    p!= name
+            +e.header-action
+                +e.A.extend.c-inherit.tdn(href="#") Развернуть
+            
+        +e.body
+            +e.body-inner
+                != text
+                
