@@ -1,8 +1,8 @@
 include _bemto.pug
 //mixin article_item(title, image, src, ago, excerpt)
 
-mixin page-header(title, desc, extClass)
-    +b.c-page-top--row.row(class=""+extClass)
+mixin page-header(title, desc, bg, extClass)
+    +b.c-page-top--row.row(class=""+extClass, style="background-image: url('"+ bg +"')"  )
         +e.container.container  
             +e.title
                 h1!= title

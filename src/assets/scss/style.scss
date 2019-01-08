@@ -1,4 +1,4 @@
-@import 'common';
+@import 'common/common';
 
 @import 'blocks/b-event-filters';
 @import 'blocks/b-event-item';
@@ -10,6 +10,8 @@
 @import 'blocks/b-event-soon';
 @import 'blocks/b-subscribe';
 @import 'blocks/b-team-item';
+@import 'blocks/b-coaching-loop';
+
 
 @import 'components/c-event-single-cert';
 @import 'components/c-event-single-check';
@@ -36,3 +38,4 @@
 
 @import 'pages/p-event-list';
 @import 'pages/p-about';
+@import 'pages/p-coaching-corporate';

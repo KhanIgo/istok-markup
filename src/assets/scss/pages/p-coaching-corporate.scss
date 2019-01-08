@@ -1,0 +1,50 @@
+.p-coaching-corporate{
+    
+    
+    &-directions{
+        background-color: $color-grey-4;
+        padding: 140px 0;
+        &__container{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
+            justify-content: space-between;
+        }
+    }
+    &-direction{
+        flex-basis: 33%;
+        flex-grow: 0;
+        flex-shrink: 0;
+        max-width: 360px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        &__title-block{
+            font-weight: 800;
+            font-size: 2em;
+            line-height: 1.45em;
+            color: $color-grey-6;
+        }
+        
+        &__title{
+            font-size: 1.5em;
+            font-weight: 600;
+        }
+        &__desc{
+            margin-top: 20px;
+        }
+        &__link-wrpr{
+            margin-top: 50px;
+        }
+        &__link{
+            font-size: 1.3em;
+            font-weight: 600;
+            padding: 1.1em 4em;
+        }   
+    }
+    
+    &-loops{
+        padding: 150px 0;
+    }
+}

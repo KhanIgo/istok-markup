@@ -1,0 +1,76 @@
+doctype html
+html(lang='RU-ru')
+    head
+        meta(charset='UTF-8')
+        title Corporate page
+        link(rel='stylesheet', href='assets/libs/hamburger/hamburgers.css')
+        link(rel='stylesheet', href='assets/fonts/Circe/font.css')
+        link(rel='stylesheet', href='assets/css/style.css')
+    body
+        include parts/_mixins.pug
+        include parts/_header.pug
+        
+        +b.MAIN.row
+            +page-header('Мы работаем с людьми, которые <br>управляют компаниями.', 'Мы помогаем лидерам внедрить и ускорить устойчивые и <br>прогрессивные изменения, основываясь на ценностях.', '/images/p-couching-corporate__top-photo.jpg', 'p-couching-corporate__top')
+            
+            
+            +b.p-coaching-corporate-directions--row.row
+                +e.container.container
+                    +b.p-coaching-corporate-direction--title
+                        +e.P.title-block Выберите #[br]интересующее вас #[br]направление
+                        
+                    +b.p-coaching-corporate-direction
+                        +e.title
+                            p Командный коучинг
+                        +e.desc
+                            p Для руководителей, бизнес-тренеров, HR-менеджеров, собственников бизнеса и всех, чья прибыль и успех зависит от других людей.
+                        +e.link-wrpr
+                            +e.A.link.btn--green(href="#") Узнать больше
+                            
+                            
+                    +b.p-coaching-corporate-direction
+                        +e.title
+                            p Индивидуальный коучинг
+                        +e.desc
+                            p Результатом индивидуального коучинга является чёткое видение клиентом цели, способов её достижения и осуществлённые конкретные действия.
+                        +e.link-wrpr
+                            +e.A.link.btn--green(href="#") Узнать больше
+                            
+            +b.p-coaching-corporate-loops.row   
+                - var loopType = 'Тренинг'
+                - var loopTitle = 'Коучинговый подход в работе <br>руководителя'
+                - var loopDesc = 'Тренинг для руководителей об инструментах коучинга, которые усилят функции управления. <br>Цель программы: дать руководителям ряд эффективных инструментов для результативной работы с персоналом и целями бизнеса. '
+                - var loopImg = 'loop-photo-1.jpg'
+                include blocks/b-coaching-loop/index.pug
+
+
+                - var loopType = 'Тренинг'
+                - var loopTitle = 'Обучение руководителей менторингу'
+                - var loopDesc = 'Менторинг – это самая эффективная форма поддержки, метод обучения, в котором более опытный ментор делится знаниями с подопечными с целью помочь им более эффективно выполнять работу и строить карьеру. '
+                - var loopImg = 'loop-photo-2.jpg'
+                include blocks/b-coaching-loop/index-2.pug
+
+
+                            
+                            
+                        
+            
+            
+            
+            //+b.p- --row.row
+                +e.container.container
+                    +e.title.block-title
+                    +e.desc
+                
+            include components/c-subscribe/index.pug
+                
+                
+                    
+        include parts/_footer.pug
+        
+        script(src='assets/libs/jquery/jquery-3.2.1.min.js')
+        script(src='assets/libs/mobile-detect/mobile-detect.min.js')
+        script(src='assets/js/responsive.js')
+        script(src='assets/js/main.js')
+        script.
+            jQuery(function($) {});

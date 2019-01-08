@@ -1,0 +1,13 @@
++b.b-coaching-loop.container
+    +e.cnt-wrpr
+        +e.cnt
+            +e.type
+                p!= loopType
+            +e.title
+                p!= loopTitle
+            +e.desc!= loopDesc
+        
+            +e.link-wrpr
+                +e.A(href="#").link.btn--orange Подробнее   
+    +e.image-wrpr
+        +e.IMG.img(src='/images/'+loopImg)

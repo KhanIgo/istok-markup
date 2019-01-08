@@ -1,6 +1,9 @@
 .c-page-top{
     color: white;
     text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     &__container{
         padding: 140px 15px;
     }
