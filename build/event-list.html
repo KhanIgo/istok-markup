@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="RU-ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Календарь мероприятий</title>
+    <link rel="stylesheet" href="assets/libs/hamburger/hamburgers.css">
+    <link rel="stylesheet" href="assets/fonts/Circe/font.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/libs/jquery/jquery-3.3.1.min.js"></script>
+  </head>
+  <body>
+    <!--mixin article_item(title, image, src, ago, excerpt)-->
+    <!--.hamburger.hamburger--stand.js-hamburger
+    .hamburger-box
+    .hamburger-inner
+    
+    
+    -->
+    <header class="row row_header">
+      <div class="container container_header"></div>
+    </header>
+                <main class="p-event-list" role="main">
+                              <div class="p-page-header p-page-header--row">
+                                                <div class="p-page-header__container container container--970 px0">
+                                                                  <div class="p-page-header__title">
+                                                                    <p>Календарь мероприятий</p>
+                                                                  </div>
+                                                                  <div class="p-page-header__description">
+                                                                    <p>Если вы хотите подробнее узнать о проводимых мероприятиях тренинг-центра "Исток", напишите нам или позвоните по телефону +7 (914) 159-31-13 - мы ответим на все ваши вопросы. </p>
+                                                                  </div>
+                                                </div>
+                              </div>
+                              <div class="b-event-filters b-event-filters--row">
+                                                <div class="b-event-filters__container container container--970 p-x0">
+                                                                  <div class="b-event-filters__drops">
+                                                                                <div class="input-item input-item--city-filter">
+                                                                                                  <div class="input-item__label label">
+                                                                                                    <p>Город</p>
+                                                                                                  </div>
+                                                                                                  <div class="input-item__data b-event-filters__dropdown">
+                                                                                                                <div class="ui-dropdown ui-dropdown--city ui-dropdown--white-bg">
+                                                                                                                                  <SELECT class="ui-dropdown__select b-event-filters b-event-filters--city-select">
+                                                                                                                                    <option>Город</option>
+                                                                                                                                    <option>Хабаровск</option>
+                                                                                                                                    <option>Владивосток</option>
+                                                                                                                                    <option>Благовещенск</option>
+                                                                                                                                    <option>Урюпинск</option>
+                                                                                                                                    <option>Бобруйск</option>
+                                                                                                                                  </SELECT>
+                                                                                                                </div>
+                                                                                                  </div>
+                                                                                </div>
+                                                                                <div class="input-item input-item--title-filter">
+                                                                                                  <div class="input-item__label label">
+                                                                                                    <p>Название тренинга</p>
+                                                                                                  </div>
+                                                                                                  <div class="input-item__data b-event-filters__dropdown">
+                                                                                                                <div class="ui-dropdown ui-dropdown--event_name ui-dropdown--white-bg">
+                                                                                                                                  <SELECT class="ui-dropdown__select b-event-filters b-event-filters--event_name-select">
+                                                                                                                                    <option>Инструменты фасилитации для руководителей</option>
+                                                                                                                                    <option>Какой-то тренинг 1</option>
+                                                                                                                                    <option>Какой-то тренинг 2</option>
+                                                                                                                                    <option>Какой-то тренинг 3</option>
+                                                                                                                                    <option>Какой-то тренинг 4</option>
+                                                                                                                                  </SELECT>
+                                                                                                                </div>
+                                                                                                  </div>
+                                                                                </div>
+                                                                  </div>
+                                                                  <div class="b-event-filters__checks">
+                                                                                <label class="ui-checkbox"><input class="ui-checkbox__input ui-checkbox__input--blue" type="checkbox"/><span class="ui-checkbox__input-span ui-checkbox__input-span--blue"></span><span class="ui-checkbox__label ui-checkbox__label--blue">Для руководителей</span>
+                                                                                </label>
+                                                                                <label class="ui-checkbox"><input class="ui-checkbox__input ui-checkbox__input--orange" type="checkbox"/><span class="ui-checkbox__input-span ui-checkbox__input-span--orange"></span><span class="ui-checkbox__label ui-checkbox__label--orange">Для HR и бизнес-тренеров</span>
+                                                                                </label>
+                                                                                <label class="ui-checkbox"><input class="ui-checkbox__input ui-checkbox__input--green" type="checkbox"/><span class="ui-checkbox__input-span ui-checkbox__input-span--green"></span><span class="ui-checkbox__label ui-checkbox__label--green">Для коучей </span>
+                                                                                </label>
+                                                                                <label class="ui-checkbox"><input class="ui-checkbox__input ui-checkbox__input--purple" type="checkbox"/><span class="ui-checkbox__input-span ui-checkbox__input-span--purple"></span><span class="ui-checkbox__label ui-checkbox__label--purple">Для всех</span>
+                                                                                </label>
+                                                                  </div>
+                                                </div>
+                              </div>
+                              <div class="row p-event-list__row">
+                                            <div class="event-month container container--970 px0">
+                                                              <div class="event-month__title">
+                                                                <p>Октябрь</p>
+                                                              </div>
+                                                          <div class="event-item">
+                                                                            <div class="event-item__dates">
+                                                                                              <div class="event-item__date-1"><span>6 октября</span>
+                                                                                              </div>
+                                                                                              <div class="event-item__date-2"><span>27 января</span>
+                                                                                              </div>
+                                                                            </div>
+                                                                            <div class="event-item__name-type">
+                                                                                              <div class="event-item__name"><a class="event-item__link" href="#">Осознанное бизнес-обучение</a>
+                                                                                              </div>
+                                                                                              <div class="event-item__type"><span>Мастер-класс</span>
+                                                                                              </div>
+                                                                            </div>
+                                                                            <div class="event-item__for-location">
+                                                                                              <div class="event-item__for"><span>Для HR и бизнес-тренеров</span>
+                                                                                              </div>
+                                                                                              <div class="event-item__location"><span>Хабаровск</span>
+                                                                                              </div>
+                                                                            </div>
+                                                          </div>
+                                                          <div class="event-item">
+                                                                            <div class="event-item__dates">
+                                                                                              <div class="event-item__date-1"><span>6 октября</span>
+                                                                                              </div>
+                                                                                              <div class="event-item__date-2"><span>27 января</span>
+                                                                                              </div>
+                                                                            </div>
+                                                                            <div class="event-item__name-type">
+                                                                                              <div class="event-item__name"><a class="event-item__link" href="#">Осознанное бизнес-обучение</a>
+                                                                                              </div>
+                                                                                              <div class="event-item__type"><span>Мастер-класс</span>
+                                                                                              </div>
+                                                                            </div>
+                                                                            <div class="event-item__for-location">
+                                                                                              <div class="event-item__for"><span>Для HR и бизнес-тренеров</span>
+                                                                                              </div>
+                                                                                              <div class="event-item__location"><span>Хабаровск</span>
+                                                                                              </div>
+                                                                            </div>
+                                                          </div>
+                                                          <div class="event-item">
+                                                                            <div class="event-item__dates">
+                                                                                              <div class="event-item__date-1"><span>6 октября</span>
+                                                                                              </div>
+                                                                                              <div class="event-item__date-2"><span>27 января</span>
+                                                                                              </div>
+                                                                            </div>
+                                                                            <div class="event-item__name-type">
+                                                                                              <div class="event-item__name"><a class="event-item__link" href="#">Осознанное бизнес-обучение</a>
+                                                                                              </div>
+                                                                                              <div class="event-item__type"><span>Мастер-класс</span>
+                                                                                              </div>
+                                                                            </div>
+                                                                            <div class="event-item__for-location">
+                                                                                              <div class="event-item__for"><span>Для HR и бизнес-тренеров</span>
+                                                                                              </div>
+                                                                                              <div class="event-item__location"><span>Хабаровск</span>
+                                                                                              </div>
+                                                                            </div>
+                                                          </div>
+                                                              <div class="event-month__title">
+                                                                <p>Ноябрь</p>
+                                                              </div>
+                                                          <div class="event-item">
+                                                                            <div class="event-item__dates">
+                                                                                              <div class="event-item__date-1"><span>6 октября</span>
+                                                                                              </div>
+                                                                                              <div class="event-item__date-2"><span>27 января</span>
+                                                                                              </div>
+                                                                            </div>
+                                                                            <div class="event-item__name-type">
+                                                                                              <div class="event-item__name"><a class="event-item__link" href="#">Осознанное бизнес-обучение</a>
+                                                                                              </div>
+                                                                                              <div class="event-item__type"><span>Мастер-класс</span>
+                                                                                              </div>
+                                                                            </div>
+                                                                            <div class="event-item__for-location">
+                                                                                              <div class="event-item__for"><span>Для HR и бизнес-тренеров</span>
+                                                                                              </div>
+                                                                                              <div class="event-item__location"><span>Хабаровск</span>
+                                                                                              </div>
+                                                                            </div>
+                                                          </div>
+                                                          <div class="event-item">
+                                                                            <div class="event-item__dates">
+                                                                                              <div class="event-item__date-1"><span>6 октября</span>
+                                                                                              </div>
+                                                                                              <div class="event-item__date-2"><span>27 января</span>
+                                                                                              </div>
+                                                                            </div>
+                                                                            <div class="event-item__name-type">
+                                                                                              <div class="event-item__name"><a class="event-item__link" href="#">Осознанное бизнес-обучение</a>
+                                                                                              </div>
+                                                                                              <div class="event-item__type"><span>Мастер-класс</span>
+                                                                                              </div>
+                                                                            </div>
+                                                                            <div class="event-item__for-location">
+                                                                                              <div class="event-item__for"><span>Для HR и бизнес-тренеров</span>
+                                                                                              </div>
+                                                                                              <div class="event-item__location"><span>Хабаровск</span>
+                                                                                              </div>
+                                                                            </div>
+                                                          </div>
+                                                          <div class="event-item">
+                                                                            <div class="event-item__dates">
+                                                                                              <div class="event-item__date-1"><span>6 октября</span>
+                                                                                              </div>
+                                                                                              <div class="event-item__date-2"><span>27 января</span>
+                                                                                              </div>
+                                                                            </div>
+                                                                            <div class="event-item__name-type">
+                                                                                              <div class="event-item__name"><a class="event-item__link" href="#">Осознанное бизнес-обучение</a>
+                                                                                              </div>
+                                                                                              <div class="event-item__type"><span>Мастер-класс</span>
+                                                                                              </div>
+                                                                            </div>
+                                                                            <div class="event-item__for-location">
+                                                                                              <div class="event-item__for"><span>Для HR и бизнес-тренеров</span>
+                                                                                              </div>
+                                                                                              <div class="event-item__location"><span>Хабаровск</span>
+                                                                                              </div>
+                                                                            </div>
+                                                          </div>
+                                                              <div class="event-month__title">
+                                                                <p>Декабрь</p>
+                                                              </div>
+                                                          <div class="event-item">
+                                                                            <div class="event-item__dates">
+                                                                                              <div class="event-item__date-1"><span>6 октября</span>
+                                                                                              </div>
+                                                                                              <div class="event-item__date-2"><span>27 января</span>
+                                                                                              </div>
+                                                                            </div>
+                                                                            <div class="event-item__name-type">
+                                                                                              <div class="event-item__name"><a class="event-item__link" href="#">Осознанное бизнес-обучение</a>
+                                                                                              </div>
+                                                                                              <div class="event-item__type"><span>Мастер-класс</span>
+                                                                                              </div>
+                                                                            </div>
+                                                                            <div class="event-item__for-location">
+                                                                                              <div class="event-item__for"><span>Для HR и бизнес-тренеров</span>
+                                                                                              </div>
+                                                                                              <div class="event-item__location"><span>Хабаровск</span>
+                                                                                              </div>
+                                                                            </div>
+                                                          </div>
+                                                          <div class="event-item">
+                                                                            <div class="event-item__dates">
+                                                                                              <div class="event-item__date-1"><span>6 октября</span>
+                                                                                              </div>
+                                                                                              <div class="event-item__date-2"><span>27 января</span>
+                                                                                              </div>
+                                                                            </div>
+                                                                            <div class="event-item__name-type">
+                                                                                              <div class="event-item__name"><a class="event-item__link" href="#">Осознанное бизнес-обучение</a>
+                                                                                              </div>
+                                                                                              <div class="event-item__type"><span>Мастер-класс</span>
+                                                                                              </div>
+                                                                            </div>
+                                                                            <div class="event-item__for-location">
+                                                                                              <div class="event-item__for"><span>Для HR и бизнес-тренеров</span>
+                                                                                              </div>
+                                                                                              <div class="event-item__location"><span>Хабаровск</span>
+                                                                                              </div>
+                                                                            </div>
+                                                          </div>
+                                                          <div class="event-item">
+                                                                            <div class="event-item__dates">
+                                                                                              <div class="event-item__date-1"><span>6 октября</span>
+                                                                                              </div>
+                                                                                              <div class="event-item__date-2"><span>27 января</span>
+                                                                                              </div>
+                                                                            </div>
+                                                                            <div class="event-item__name-type">
+                                                                                              <div class="event-item__name"><a class="event-item__link" href="#">Осознанное бизнес-обучение</a>
+                                                                                              </div>
+                                                                                              <div class="event-item__type"><span>Мастер-класс</span>
+                                                                                              </div>
+                                                                            </div>
+                                                                            <div class="event-item__for-location">
+                                                                                              <div class="event-item__for"><span>Для HR и бизнес-тренеров</span>
+                                                                                              </div>
+                                                                                              <div class="event-item__location"><span>Хабаровск</span>
+                                                                                              </div>
+                                                                            </div>
+                                                          </div>
+                                            </div>
+                              </div>
+                </main>
+    <footer class="row_footer">
+      <div class="container container_footer"></div>
+    </footer>
+    <script src="assets/libs/mobile-detect/mobile-detect.min.js"></script>
+    <script src="assets/js/responsive.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>jQuery(function($) {});</script>
+  </body>
+</html>
