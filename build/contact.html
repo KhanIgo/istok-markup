@@ -18,30 +18,56 @@
     <header class="row row_header">
       <div class="container container_header"></div>
     </header>
-                <main class="row" role="main">
+                <main class="row bg-grey" role="main">
+                              <div class="contacts">
+                                                <div class="contacts__form-wrpr">
+                                                                  <div class="contacts__title">
+                                                                    <h3>Напишите нам</h3>
+                                                                  </div>
+                                                                  <div class="contacts__desc">
+                                                                    <p>Чтобы зарегистрироваться на это событие, заполните анкету. Информация о Вас будет доступна только организаторам. </p>
+                                                                  </div>
+                                                              <form class="contacts-form">
+                                                                                <div class="contacts-form__input-row">
+                                                                                                  <label class="contacts-form__label">Имя
+                                                                                                  </label>
+                                                                                                  <div class="contacts-form__input-wrpr"><input class="contacts-form__input-text ui-text ui-text--grey" type="text"/>
+                                                                                                  </div>
+                                                                                </div>
+                                                                                <div class="contacts-form__input-row">
+                                                                                                  <label class="contacts-form__label">Телефон
+                                                                                                  </label>
+                                                                                                  <div class="contacts-form__input-wrpr"><input class="contacts-form__input-text ui-text ui-text--grey" type="text"/>
+                                                                                                  </div>
+                                                                                </div>
+                                                                                <div class="contacts-form__input-row">
+                                                                                                  <label class="contacts-form__label">E-mail
+                                                                                                  </label>
+                                                                                                  <div class="contacts-form__input-wrpr"><input class="contacts-form__input-text ui-text ui-text--grey" type="email"/>
+                                                                                                  </div>
+                                                                                </div>
+                                                                                <div class="contacts-form__input-row contacts-form__input-row--type-textarea">
+                                                                                                  <label class="contacts-form__label">Текст
+                                                                                                  </label>
+                                                                                                  <div class="contacts-form__input-wrpr"><textarea class="contacts-form__input-textarea ui-textarea ui-textarea--grey"></textarea>
+                                                                                                  </div>
+                                                                                </div>
+                                                                                <div class="contacts-form__input-row contacts-form__input-row--type-submit">
+                                                                                                  <div class="contacts-form__input-wrpr"><input class="contacts-form__input-submit btn btn--orange btn--full-width" type="submit" value="Отправить"/>
+                                                                                                  </div>
+                                                                                </div>
+                                                              </form>
+                                                </div>
+                                                <div class="contacts__info-wrpr">
+                                                </div>
+                              </div>
                   <!--+b.p- --row.row
                   +e.container.container
                       +e.title.block-title
                       +e.desc
                   
                   -->
-                              <div class="c-subscribe row row--subscribe bg-green">
-                                                <div class="c-subscribe__container container">
-                                                                  <div class="c-subscribe__title block-title"><span>Подпишитесь!</span>
-                                                                  </div>
-                                                                  <div class="c-subscribe__desc block-desc">
-                                                                    <p>Мы будем присылать вам полезные новости и приглашать на мероприятия</p>
-                                                                  </div>
-                                                                  <div class="c-subscribe__form-wrpr">
-                                                                                <form class="c-subscribe-form">
-                                                                                                  <div class="c-subscribe-form__input-wrpr c-subscribe-form__input-wrpr--email-input-wrpr"><input class="c-subscribe-form__input c-subscribe-form__input--email-input ui-text ui-text--large" type="text" placeholder="username@mail.ru"/>
-                                                                                                  </div>
-                                                                                                  <div class="c-subscribe-form__input-wrpr c-subscribe-form__input-wrpr--submit-wrpr"><input class="c-subscribe-form__input c-subscribe-form__input--submit-input btn btn--white-trans btn btn--large btn btn--full-width" type="submit" value="Подписаться"/>
-                                                                                                  </div>
-                                                                                </form>
-                                                                  </div>
-                                                </div>
-                              </div>
+                  <!--include components/c-subscribe/index.pug-->
                 </main>
     <footer class="row_footer">
       <div class="container container_footer"></div>

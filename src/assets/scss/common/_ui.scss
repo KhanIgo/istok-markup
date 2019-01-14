@@ -221,5 +221,17 @@ $btn: '.btn';
         &--large{
             font-size: 1.35em;
         }
+        &--grey{
+            background-color: $color-grey-4;
+        }
+    }
+    &-textarea{
+        padding: 1.3em 1.5em;
+        outline: 0;
+        width: 100%;
+        resize: none;
+        &--grey{
+            background-color: $color-grey-4;
+        }
     }
 }

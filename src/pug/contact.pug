@@ -10,7 +10,45 @@ html(lang='RU-ru')
         include parts/_mixins.pug
         include parts/_header.pug
         
-        +b.MAIN.row
+        +b.MAIN.row.bg-grey
+        
+            +b.contacts
+                +e.form-wrpr
+                    +e.title
+                        h3 Напишите нам
+                    +e.desc
+                        p Чтобы зарегистрироваться на это событие, заполните анкету. Информация о Вас будет доступна только организаторам. 
+                    +b.FORM.contacts-form
+                        +e.input-row
+                            +e.LABEL.label Имя
+                            +e.input-wrpr
+                                +e.INPUT(type="text").input-text.ui-text--grey
+                            
+                        +e.input-row
+                            +e.LABEL.label Телефон
+                            +e.input-wrpr
+                                +e.INPUT(type="text").input-text.ui-text--grey    
+                            
+                        +e.input-row
+                            +e.LABEL.label E-mail
+                            +e.input-wrpr
+                                +e.INPUT(type="email").input-text.ui-text--grey    
+                            
+                        +e.input-row--type-textarea
+                            +e.LABEL.label Текст
+                            +e.input-wrpr
+                                +e.TEXTAREA.input-textarea.ui-textarea--grey
+                            
+                        +e.input-row--type-submit
+                            +e.input-wrpr
+                                +e.INPUT(type="submit", value="Отправить").input-submit.btn--orange.--full-width
+                            
+                        
+                    
+                    
+                    
+                +e.info-wrpr
+                
             
             
             
@@ -21,7 +59,7 @@ html(lang='RU-ru')
                     +e.title.block-title
                     +e.desc
                 
-            include components/c-subscribe/index.pug
+            //include components/c-subscribe/index.pug
                 
                 
                     
