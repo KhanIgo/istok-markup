@@ -12,13 +12,13 @@ html(lang='RU-ru')
         
         +b.MAIN.row.bg-grey
         
-            +b.contacts
+            +b.p-contacts
                 +e.form-wrpr
                     +e.title
                         h3 Напишите нам
                     +e.desc
                         p Чтобы зарегистрироваться на это событие, заполните анкету. Информация о Вас будет доступна только организаторам. 
-                    +b.FORM.contacts-form
+                    +b.FORM.p-contacts-form
                         +e.input-row
                             +e.LABEL.label Имя
                             +e.input-wrpr
@@ -42,12 +42,45 @@ html(lang='RU-ru')
                         +e.input-row--type-submit
                             +e.input-wrpr
                                 +e.INPUT(type="submit", value="Отправить").input-submit.btn--orange.--full-width
+                    
+                    
+                +b.p-contacts-info
+                    +e.row--city
+                        +e.label
+                            span Город
+                        +e.data
+                            span Хабаровск
                             
-                        
+                    +e.row--address
+                        +e.label
+                            span Адрес 
+                        +e.data
+                            span ул. Фрунзе, 22,  офис 401
+                            
+                    +e.row--connect
+                        +e.label
+                            span Контакты
+                        +e.data
+                            a(href="#") 8 (4212) 24-31-13   
+                            br
+                            a(href="#") info@tc-i.ru
+                            
+                    +e.row--social
+                        +b.A(href="#").ui-social-link--youtube #[span]
+                        +b.A(href="#").ui-social-link--instagram #[span]
+                        +b.A(href="#").ui-social-link--facebook #[span]
+                        +b.A(href="#").ui-social-link--vk #[span]
                     
+                    +e.row--download
+                        +b.A(href="#").p-contacts__link--requisite.btn--white.--download.--full-width--large #[i] Скачать реквизиты
+                        br
+                        br
+                        +b.A(href="#").p-contacts__link--logo.btn--white-trans.--download #[i] Скачать логотип
                     
+                            
                     
-                +e.info-wrpr
+                            
+                    
                 
             
             
