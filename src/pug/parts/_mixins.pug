@@ -169,10 +169,11 @@ mixin p-front-feedback(img, name, job, text)
         +e.img-name-job
             +e.img-wrpr
                 +e.IMG.img(src="/images/"+ img)
-            +e.name
-                span= name
-            +e.job
-                span= job
+            +e.name-job
+                +e.name
+                    span= name
+                +e.job
+                    span!= job
         +e.text
             p!= text
             
