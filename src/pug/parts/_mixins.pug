@@ -128,3 +128,94 @@ mixin accordeon_item(name, text)
             +e.body-inner
                 != text
                 
+                
+mixin front_post_item(thumb, title, part)
+    +b.p-front-post
+        +e.thumb-wrpr
+            +e.IMG(src='/images/'+ thumb).thumb
+        +e.info-wrpr
+            +e.title
+                +e.A(href="#").link!= title
+            +e.part
+                +e.A(href="#").link-part!= part
+            
+mixin front-service-item(mod, text)
+    +b.p-front-service-item(class="p-front-service-item--"+mod)
+        +e.I.icon
+        +e.text
+            p!= text
+
+mixin front-main-program(img, name, desc)
+    +b.p-front-main-program
+        +e.thumb-wrpr
+            +e.IMG.thumb(src="/images/"+ img)
+        +e.name
+            +e.A(href="#").name-link= name
+        +e.desc
+            +e.A(href="#").desc-link= desc
+        +e.date
+            label.label Ближайший тренинг
+            spav.value 16 сентября
+
+mixin front-blog-item(title, exceprt)
+    +b.p-front-blog-post
+        +e.date 
+            span 5 августа 2018
+        +e.A(href="#").title!= title
+        +e.A(href="#").excerpt!= exceprt
+            
+mixin p-front-feedback(img, name, job, text)
+    +b.p-front-feedback
+        +e.img-name-job
+            +e.img-wrpr
+                +e.IMG.img(src="/images/"+ img)
+            +e.name
+                span= name
+            +e.job
+                span= job
+        +e.text
+            p!= text
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -10,12 +10,29 @@ html(lang='RU-ru')
         include parts/_mixins.pug
         include parts/_header.pug
         
-        +b.MAIN.p-.row
+        +b.MAIN.p-front.row
+            
+            include parts/_front_s1.pug
+            include parts/_front_about.pug
+            include parts/_front_posts.pug
+            include parts/_front_services.pug
+            include parts/_front_main_programs.pug
+            include parts/_front_calendar.pug
+            include parts/_front_blog.pug
+            include components/c-our-clients/index.pug
+            include parts/_front_feedbacks.pug
+            
+                                
+                            
+            
             
             //+b.p-
-                +b.container
+                +e.container.container
+                
                 
             include components/c-subscribe/index.pug
+            
+            
                 
                 
                     
