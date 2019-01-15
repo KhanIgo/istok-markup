@@ -23,21 +23,205 @@ $p-selector: '.p-front';
         margin-top: 55px;
     }
 }
-#{$p-selector}-posts{
-    &__container{
-        display: flex;
-        //flex-wrap: wrap;
+
+#{$p-selector}-about{
+    margin-top: 125px;
+    &__container{}
+    &__item{
+        p{
+            margin-top: 30px;
+            line-height: 1.45em;
+        }
+        &--1{}
+        &--2{
+            padding: 75px 15px 15px 65px;
+            h2{
+                font-size: 2em;
+            }
+            
+        }
+        &--3{
+            padding: 20px 10px 10px 20px;
+        }
     }
 }
-#{$p-selector}-main-programs{
+
+#{$p-selector}-posts{
+    margin-top: 120px;
+    &__container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+}
+#{$p-selector}-post{
+    position: relative;
+    width: 270px;
+    margin-bottom: 20px;
+    height: auto;
+    &__thumb-wrpr{}
+    &__info-wrpr{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 30px;
+        &:before{
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 270px;
+            left: 0;
+            bottom: 0;
+            background: linear-gradient(0deg, rgba(4, 192, 192, 0.9) 41.81%, rgba(4, 192, 192, 0) 100%);
+            z-index: 1;
+        }
+    }
+    &__title{
+        position: relative;
+        z-index: 2;
+        margin-bottom: 25px;
+        font-size: 1.3em;
+        color: $color-white;
+    }
+    &__link{
+        color: inherit;
+        text-decoration: none;
+    }
+    &__part{
+        position: relative;
+        z-index: 2;
+        color: $color-white;
+    }
+    &__link-part{
+        color: inherit;
+        border: solid 2px currentColor;
+        display: inline-block;
+        text-decoration: none;
+        padding: 0.4em 1em;
+    }
+}
+
+#{$p-selector}-services{
+    margin-top: 50px;
+    &__container{
+        border: solid 5px $color-green;
+        padding: 65px 75px;
+        max-width: 1170px;
+    }
+    &__title{
+        text-align: center;
+        font-size: 1.25em;
+    }
     &__list{
         display: flex;
         flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+}
+#{$p-selector}-service-item{
+    width: 200px;
+    &__icon{
+        display: block;
+        width: 100%;
+        height: 175px;
+        background-size: contain;
+        background-position: center;
+    }
+    &__text{
+        text-align: center;
+    }
+    &--1{
+        i{ background-image: url("#{$assets-path}/p-front-service-icon-1.svg" )};
+    }
+    &--2{
+        i{ background-image: url("#{$assets-path}/p-front-service-icon-2.svg" )};
+    }
+    &--3{
+        i{ background-image: url("#{$assets-path}/p-front-service-icon-3.svg" )};
+    }
+    &--4{
+        i{ background-image: url("#{$assets-path}/p-front-service-icon-4.svg" )};
+    }
+    
+/*
+    
+    p-front-service-icon-2.svg
+    p-front-service-icon-3.svg
+    p-front-service-icon-4.svg
+*/
+}
+
+#{$p-selector}-main-programs{
+    margin-top: 100px;
+    &__container{}
+    &__title{
+        text-align: center;
+        font-size: 2em;
+        font-weight: 700;
+    }
+    &__desc{
+        text-align: center;
+        margin-top: 15px;
+        color: $color-grey-6;
+    }
+    &__list{
+        margin-top: 55px;
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
     }
 }
 #{$p-selector}-main-program{
+    width: 370px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 25px;
+    &__thumb-wrpr{
+        width: 100%;
+        height: 300px;
+    }
+    &__thumb{
+        width: 100%;
+        height: 300px;
+        object-position: center;
+        object-fit: cover;
+    }
+    &__name{
+        margin-top: 45px;
+        font-size: 1.3em;
+        font-weight: 600;
+    }
+    &__name-link{
+        color: inherit;
+        text-decoration: none;
+    }
+    &__desc{
+        margin-top: 15px;
+        line-height: 1.45em;
+    }
+    &__desc-link{
+        color: inherit;
+        text-decoration: none;
+    }
+    &__date{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        .label{}
+        .value{
+            color: $color-orange;
+            font-size: 1.3em;
+            margin-top: 5px;
+            font-weight: 600;
+        }
+    }
 }
 //#{$p-selector}{}
 
@@ -48,6 +232,6 @@ height: 272px;
 left: 645px;
 top: 1627px;
 
-background: linear-gradient(180deg, rgba(4, 192, 192, 0.9) 41.81%, rgba(4, 192, 192, 0) 100%);
+
 transform: rotate(-180deg);
 */

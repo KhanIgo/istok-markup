@@ -131,7 +131,7 @@ body {
   font-size: 14px;
 }
 
-.tdn {
+.tdn{
   text-decoration: none;
 }
 
@@ -156,4 +156,8 @@ ul {
   &--large {
     font-size: 2em;
   }
+}
+
+a{
+    color: $color-green;
 }

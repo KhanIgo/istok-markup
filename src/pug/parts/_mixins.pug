@@ -140,7 +140,7 @@ mixin front_post_item(thumb, title, part)
                 +e.A(href="#").link-part!= part
             
 mixin front-service-item(mod, text)
-    +b.p-front-service-item(class="p-front-service-item--"+mod)
+    +b(class="p-front-service-item--"+mod)
         +e.I.icon
         +e.text
             p!= text
