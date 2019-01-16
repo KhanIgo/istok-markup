@@ -153,11 +153,6 @@ body > .row-flex {
   padding-right: 0;
 }
 
-.gr-col {
-  float: left;
-}
-
-
 @media (min-width: 1170px) {
   @include grids('.lg');
 }
