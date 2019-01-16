@@ -8,6 +8,9 @@ $b-selector: '.b-event-soon-card';
     font-weight: 600;
     align-items: stretch;
     margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     &__date{
         color: $color-green;
     }
@@ -15,6 +18,7 @@ $b-selector: '.b-event-soon-card';
         color: $color-grey-dark;
         font-size: 1.33em;
         margin-top: 10px;
+        margin-bottom: auto;
     }
     &__link{
         color: inherit;
@@ -28,7 +32,7 @@ $b-selector: '.b-event-soon-card';
     &--to-all{
         background-color: $color-green;
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
         font-size: 1.3em;
         padding-left: 35px;
