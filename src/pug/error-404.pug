@@ -1,0 +1,36 @@
+doctype html
+html(lang='RU-ru')
+    head
+        meta(charset='UTF-8')
+        title Index page
+        link(rel='stylesheet', href='assets/libs/hamburger/hamburgers.css')
+        link(rel='stylesheet', href='assets/fonts/Circe/font.css')
+        link(rel='stylesheet', href='assets/css/style.css')
+    body
+        include parts/_mixins.pug
+        
+        +b.MAIN.p-error-row.row
+            +b.p-error
+                +e.num-and-sign
+                    +e.num
+                        p 404
+                    +e.sign
+                        p ошибка
+                +e.desc-and-btn
+                    +e.desc
+                        p Страница не найдена
+                    +e.btn-wrpr
+                        +e.A(href='#').btn.btn--green На главную
+                
+        
+        
+        
+        
+            
+        
+        script(src='assets/libs/jquery/jquery-3.2.1.min.js')
+        script(src='assets/libs/mobile-detect/mobile-detect.min.js')
+        script(src='assets/js/responsive.js')
+        script(src='assets/js/main.js')
+        script.
+            jQuery(function($) {});

@@ -1,0 +1,39 @@
+.p-error-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #F2F2F2;
+}
+.p-error{
+    text-align: center;
+    &__num-and-sign{
+        position: relative;
+    }   
+    &__num{
+        font-weight: 900;
+        font-size: 18em;
+        line-height: 1em;
+        color: $color-grey-5;
+    }
+    &__sign{
+        position: absolute;
+        top: calc(50% + 5px);
+        width: 100%;
+        color: $color-grey-3;
+    }
+    &__desc-and-btn{}
+    &__desc{
+        color: $color-black;
+    }
+    &__btn-wrpr{
+        margin-top: 40px;
+        font-size: 1.2em;
+    }
+    &__btn{
+        padding-left: 2em;
+        padding-right: 2em;
+        font-weight: 700;
+    }
+}
