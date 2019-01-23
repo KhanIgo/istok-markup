@@ -1,0 +1,76 @@
+doctype html
+html(lang='RU-ru')
+    head
+        meta(charset='UTF-8')
+        title Contacts page
+        link(rel='stylesheet', href='assets/libs/hamburger/hamburgers.css')
+        link(rel='stylesheet', href='assets/fonts/Circe/font.css')
+        link(rel='stylesheet', href='assets/css/style.css')
+    body
+        include parts/_mixins.pug
+        include parts/_header.pug
+        
+        +b.MAIN.p-search.row.bg-grey
+            +e.container.container
+                +e.header
+                    +e.P.title результаты поиска #[br] по запросу 
+                        span.search-query коучинг
+                    +e.P.desc Найдено 3 страницы услуг, 3 записи в блоге, 5 мероприятий
+                
+                +e.results
+                    
+                    +e.results-row
+                        +e.result-title
+                            p Страницы услуг (3)
+                        
+                        +e.results-list
+                            +e.services-item
+                                +e.services-item__title
+                                    p Командный коучинг
+                                +e.services-item__excerpt
+                                    p Для руководителей, бизнес-тренеров, HR-менеджеров, собственников бизнеса и всех, чья прибыль и успех зависит от других людей.
+                            
+                            +e.services-item
+                                +e.services-item__title
+                                    p Индивидуальный коучинг
+                                +e.services-item__excerpt
+                                    p Результатом индивидуального коучинга является чёткое видение клиентом цели, способов её достижения и осуществлённые конкретные действия.
+                            
+                            +e.services-item
+                                +e.services-item__title
+                                    p Индивидуальный коучинг
+                                +e.services-item__excerpt
+                                    p Результатом индивидуального коучинга является чёткое видение клиентом цели, способов её достижения и осуществлённые конкретные действия.
+                            
+                            
+                        
+                        
+                    
+                    +e.results-row
+                        +e.result-title
+                            p Мероприятия (5)
+                        +e.results-list
+                    
+                    +e.results-row
+                        +e.result-title
+                            p Записи в блоге (3)
+                        +e.results-list
+                    
+            
+            //+b.p- --row.row
+                +e.container.container
+                    +e.title.block-title
+                    +e.desc
+                
+            //include components/c-subscribe/index.pug
+                
+                
+                    
+        include parts/_footer.pug
+        
+        script(src='assets/libs/jquery/jquery-3.2.1.min.js')
+        script(src='assets/libs/mobile-detect/mobile-detect.min.js')
+        script(src='assets/js/responsive.js')
+        script(src='assets/js/main.js')
+        script.
+            jQuery(function($) {});
