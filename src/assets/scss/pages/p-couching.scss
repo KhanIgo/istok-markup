@@ -1,0 +1,50 @@
+.p-page-couching-page{
+    &__container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 85px 5px 50px;
+            
+    }
+    &__content{
+        width: 100%;
+        max-width: 620px;
+        padding-left: 20px;
+        margin-right: 20px;
+        line-height: 1.45em;
+        
+    }
+
+    &__sidebar{
+        max-width: 270px;
+    }
+    
+    &__siblings{}
+    &__siblings-list{
+        width: 100%;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+    &__siblings-list-item{
+        width: 100%;
+        font-weight: 600;
+        font-size: 1.28em;
+        border-top: solid 6px $color-orange;
+        padding-top: 27px;
+        margin-bottom: 80px;
+        &:last-child{ margin-bottom: 0; }
+    }
+    &__siblings-list-link{
+        display: block;
+        text-decoration: none;
+        color: inherit;
+    }
+
+}
+p{
+    margin-bottom: 1.5em;
+    &:LAST-CHILD{
+        margin-bottom: 0;
+    }
+}
